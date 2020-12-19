@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<result plugin="junit@1.44">
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/workspace/Pipeline_calculator/target/surefire-reports/TEST-com.learntechpuzz.calculator.CalculatorServiceTest.xml</file>
+      <name>com.learntechpuzz.calculator.CalculatorServiceTest</name>
+      <duration>6.195</duration>
+      <time>6.195</time>
+      <nodeId>15</nodeId>
+      <enclosingBlocks>
+        <string>11</string>
+      </enclosingBlocks>
+      <enclosingBlockNames>
+        <string>Maven Build</string>
+      </enclosingBlockNames>
+      <cases>
+        <case>
+          <duration>0.545</duration>
+          <className>com.learntechpuzz.calculator.CalculatorServiceTest</className>
+          <testName>testAdd</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>6.195</duration>
+  <keepLongStdio>false</keepLongStdio>
+</result>

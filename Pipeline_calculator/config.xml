@@ -1,0 +1,22 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.40">
+  <actions/>
+  <description>to explore pipeline for calculator appln</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.87">
+    <script>node(&apos;master&apos;) {
+    stage(&apos;GitCheckout&apos;) {
+    git &apos;https://github.com/kamshobi/clonedFromHakin.git&apos;
+}
+stage(&apos;Maven Build&apos;) {
+    withMaven(jdk: &apos;JAVA&apos;, maven: &apos;maven&apos;){
+ sh &apos;mvn clean install&apos;
+}
+}
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

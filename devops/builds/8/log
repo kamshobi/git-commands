@@ -1,0 +1,109 @@
+Started by user [8mha:////4HvCZMihJg1IelSV+8xIn2LCgFILtasFyXZAlzJ3mtUEAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgY+/dLi1CL97MTc4oz8pEwA+AthbsMAAAA=[0mkamala
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/devops
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kamshobi/clonedFromHakin.git # timeout=10
+Fetching upstream changes from https://github.com/kamshobi/clonedFromHakin.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/kamshobi/clonedFromHakin.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 1f79d8f4f2d75790da2ae4a4688552d70c3724bc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 1f79d8f4f2d75790da2ae4a4688552d70c3724bc # timeout=10
+Commit message: "test f"
+ > git rev-list --no-walk 821601110bd1e1ac460504bc494eed06096db8ab # timeout=10
+[devops] $ /bin/sh -xe /tmp/jenkins5073457826051814148.sh
++ mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< com.learntechpuzz:demo-calculator-service >--------------
+[INFO] Building demo-calculator-service 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ demo-calculator-service ---
+[INFO] Deleting /var/lib/jenkins/workspace/devops/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ demo-calculator-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ demo-calculator-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /var/lib/jenkins/workspace/devops/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ demo-calculator-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/devops/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ demo-calculator-service ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/devops/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ demo-calculator-service ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.learntechpuzz.calculator.CalculatorServiceTest
+17:41:17.944 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:41:17.996 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:41:18.079 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.learntechpuzz.calculator.CalculatorServiceTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:41:18.119 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.learntechpuzz.calculator.CalculatorServiceTest], using SpringBootContextLoader
+17:41:18.133 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.learntechpuzz.calculator.CalculatorServiceTest]: class path resource [com/learntechpuzz/calculator/CalculatorServiceTest-context.xml] does not exist
+17:41:18.134 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.learntechpuzz.calculator.CalculatorServiceTest]: class path resource [com/learntechpuzz/calculator/CalculatorServiceTestContext.groovy] does not exist
+17:41:18.135 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.learntechpuzz.calculator.CalculatorServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:41:18.138 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.learntechpuzz.calculator.CalculatorServiceTest]: CalculatorServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:41:18.231 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.learntechpuzz.calculator.CalculatorServiceTest]
+17:41:18.367 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/var/lib/jenkins/workspace/devops/target/classes/com/learntechpuzz/calculator/CalculatorApplication.class]
+17:41:18.369 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.learntechpuzz.calculator.CalculatorApplication for test class com.learntechpuzz.calculator.CalculatorServiceTest
+17:41:18.558 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.learntechpuzz.calculator.CalculatorServiceTest]: using defaults.
+17:41:18.560 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:41:18.592 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+17:41:18.593 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:41:18.594 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@662b4c69, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@fa49800, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71238fc2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2a54a73f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16a0ee18, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d6f0054, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@505fc5a4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5fbdfdcf, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4efc180e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@bd4dc25, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@25084a1e]
+17:41:18.613 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7fee8714 testClass = CalculatorServiceTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4229bb3f testClass = CalculatorServiceTest, locations = '{}', classes = '{class com.learntechpuzz.calculator.CalculatorApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b0404f, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@71b1176b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@794cb805, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@36c88a32], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:41:18.678 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.1.RELEASE)
+
+2020-12-12 17:41:19.142  INFO 9021 --- [           main] c.l.calculator.CalculatorServiceTest     : Starting CalculatorServiceTest on ip-172-31-26-211 with PID 9021 (started by jenkins in /var/lib/jenkins/workspace/devops)
+2020-12-12 17:41:19.145  INFO 9021 --- [           main] c.l.calculator.CalculatorServiceTest     : No active profile set, falling back to default profiles: default
+2020-12-12 17:41:22.611  INFO 9021 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-12 17:41:23.211  INFO 9021 --- [           main] c.l.calculator.CalculatorServiceTest     : Started CalculatorServiceTest in 4.514 seconds (JVM running for 6.478)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.001 s - in com.learntechpuzz.calculator.CalculatorServiceTest
+2020-12-12 17:41:23.850  INFO 9021 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ demo-calculator-service ---
+[INFO] Building jar: /var/lib/jenkins/workspace/devops/target/demo-calculator-service-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.1.RELEASE:repackage (repackage) @ demo-calculator-service ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ demo-calculator-service ---
+[INFO] Installing /var/lib/jenkins/workspace/devops/target/demo-calculator-service-0.0.1-SNAPSHOT.jar to /var/lib/jenkins/.m2/repository/com/learntechpuzz/demo-calculator-service/0.0.1-SNAPSHOT/demo-calculator-service-0.0.1-SNAPSHOT.jar
+[INFO] Installing /var/lib/jenkins/workspace/devops/pom.xml to /var/lib/jenkins/.m2/repository/com/learntechpuzz/demo-calculator-service/0.0.1-SNAPSHOT/demo-calculator-service-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.248 s
+[INFO] Finished at: 2020-12-12T17:41:26Z
+[INFO] ------------------------------------------------------------------------
++ echo test for web hook
+test for web hook
+Finished: SUCCESS

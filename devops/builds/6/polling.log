@@ -1,0 +1,13 @@
+Started on Dec 12, 2020 1:25:11 PM
+Started by event from 140.82.115.151 ⇒ http://18.188.54.255:8080/github-webhook/ on Sat Dec 12 13:25:11 UTC 2020
+Using strategy: Default
+[poll] Last Built Revision: Revision ad905e260cd6eee4102d0ee499188505612cd64e (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/kamshobi/clonedFromHakin.git # timeout=10
+Found 1 remote heads on https://github.com/kamshobi/clonedFromHakin.git
+[poll] Latest remote head revision on refs/heads/master is: 2d1a5a40bab39eb204c052b62ed137955d3c17eb
+Done. Took 0.47 sec
+Changes found

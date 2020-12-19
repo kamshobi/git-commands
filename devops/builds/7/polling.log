@@ -1,0 +1,12 @@
+Started on Dec 12, 2020 5:23:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 2d1a5a40bab39eb204c052b62ed137955d3c17eb (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/kamshobi/clonedFromHakin.git # timeout=10
+Found 1 remote heads on https://github.com/kamshobi/clonedFromHakin.git
+[poll] Latest remote head revision on refs/heads/master is: 821601110bd1e1ac460504bc494eed06096db8ab
+Done. Took 0.14 sec
+Changes found

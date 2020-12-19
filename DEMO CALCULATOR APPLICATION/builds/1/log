@@ -1,0 +1,26 @@
+Started by user [8mha:////4HvCZMihJg1IelSV+8xIn2LCgFILtasFyXZAlzJ3mtUEAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgY+/dLi1CL97MTc4oz8pEwA+AthbsMAAAA=[0mkamala
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/DEMO CALCULATOR APPLICATION
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/learntechpuzz/demo-calculator-service.git
+ > git init /var/lib/jenkins/workspace/DEMO CALCULATOR APPLICATION # timeout=10
+Fetching upstream changes from https://github.com/learntechpuzz/demo-calculator-service.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/learntechpuzz/demo-calculator-service.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/learntechpuzz/demo-calculator-service.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision bb28ef8f8663287bc77ef5220d246d9d58fa0276 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bb28ef8f8663287bc77ef5220d246d9d58fa0276 # timeout=10
+Commit message: "updated email"
+First time build. Skipping changelog.
+[DEMO CALCULATOR APPLICATION] $ /bin/sh -xe /tmp/jenkins7787452667887958418.sh
++ mvn clean install
+/tmp/jenkins7787452667887958418.sh: 2: mvn: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

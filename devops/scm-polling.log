@@ -1,0 +1,13 @@
+Started on Dec 14, 2020 9:23:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 7d09acf7dba8d2fa3d7e368434af430e0215328a (refs/remotes/origin/master)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/kamshobi/clonedFromHakin.git # timeout=10
+Found 1 remote heads on https://github.com/kamshobi/clonedFromHakin.git
+[poll] Latest remote head revision on refs/heads/master is: 7d09acf7dba8d2fa3d7e368434af430e0215328a - already built by 9
+Done. Took 0.16 sec
+No changes
